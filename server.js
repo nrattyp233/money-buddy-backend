@@ -10,7 +10,7 @@ const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 const PLAID_SECRET = process.env.PLAID_SECRET;
 
 const plaidClient = new PlaidApi(new Configuration({
-    basePath: PlaidEnvironments.sandbox,
+    basePath: PlaidEnvironments.production,
     baseOptions: {
         headers: {
             'PLAID-CLIENT-ID': PLAID_CLIENT_ID,
