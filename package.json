@@ -4,11 +4,14 @@
   "description": "Backend for Plaid integration",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node test-endpoints.js",
+    "dev": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "plaid": "^22.0.0"
+    "plaid": "^22.0.0",
+    "@supabase/supabase-js": "^2.45.4"
   }
 }
